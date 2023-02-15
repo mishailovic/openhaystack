@@ -29,7 +29,7 @@ jobs:
 
   build-and-release:
     name: "Create release on GitHub"
-    runs-on: macos-11
+    runs-on: macos-latest
     env:
       APP: OpenHaystack
       PROJECT_DIR: OpenHaystack
@@ -44,7 +44,7 @@ jobs:
       - name: "Select Xcode 12"
         uses: devbotsxyz/xcode-select@v1
         with:
-          version: "12"
+          version: "latest"
       - name: "Add ESP32 firmware"
         uses: actions/download-artifact@v2
         with:
