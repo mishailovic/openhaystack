@@ -44,7 +44,7 @@ jobs:
       - name: "Select Xcode 12"
         uses: devbotsxyz/xcode-select@v1
         with:
-          version: "latest"
+          version: "12"
       - name: "Add ESP32 firmware"
         uses: actions/download-artifact@v2
         with:
